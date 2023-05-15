@@ -13,12 +13,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 import os
 
-# if os.name == 'nt':
-#     VENV_BASE = os.environ['VIRTUAL_ENV']
-#     os.environ['PATH'] = os.path.join(VENV_BASE, 'Lib\\site-packages\\osgeo') + ';' + os.environ['PATH']
-#     os.environ['PROJ_LIB'] = os.path.join(VENV_BASE, 'Lib\\site-packages\\osgeo\\data\\proj') + ';' + os.environ['PATH']
-    
-# C:\Program Files\PostgreSQL\14\gdal-data
 if os.name == 'nt':
     OSGEO4W = r"C:\OSGeo4W"
 os.environ['OSGEO4W_ROOT'] = OSGEO4W
@@ -36,7 +30,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-fo=cf*rt#ukqe%tt_59g4vyom*p5q#$)neybmdoi98i2z4w9dd'
+SECRET_KEY = 'ADD-YOUR-OWN-KEY-HERE'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
